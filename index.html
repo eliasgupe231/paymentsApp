@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div>
+        <h1>Plataforma de Pagos</h1>
+    </div>
+</header>
+
+<main>
+    <section class="formContainer">
+        <form class="form" id="form" action="">
+            <div class="formContent">
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="name" required>
+            </div>
+            <div class="formContent">
+                <label for="metodo">Método de pago*</label>
+                <input type="text" id="metodo" name="method" required>
+            </div>
+            <div class="formContent">
+                <label for="fecha">Fecha de pago*</label>
+                <input type="date" id="fecha" name="date" required>
+            </div>
+            <div class="formContent">
+                <label for="mensualidad">Mensualidad*</label>
+                <input type="text" id="mensualidad" name="month" required>
+            </div>
+            <div>
+            <button id="formBtn">Agregar</button>
+            </div>
+        </form>
+        <p id="message">Se ha agregado a la planilla correctamente</p>
+    </section>
+    <section class="filtroTable">
+        <div class="filterContainer">
+
+        </div>
+        <div class="tableContainer">
+            <table id="paymentsTable">
+                <tbody>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Metodo de pago</th>
+                        <th>Fecha de pago</th>
+                        <th>Mensualidad</th>
+                    </tr>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="UpDateBtn">
+            <button id="UpDateBtn">Actualizar</button>
+        </div>
+    </section>
+</main>
+
+<script src="main.js"></script>
+<script src="jquery-3-7-1.js"></script>
+</body>
+</html>
